@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ETransfer - Service Discontinued</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #F7F9FD 0%, #EEF2FF 100%);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            color: #1A1A1A;
+        }
+
+        .container {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .logo {
+            margin-bottom: 40px;
+        }
+
+        .logo svg {
+            width: 200px;
+            height: auto;
+        }
+
+        .status-icon {
+            width: 120px;
+            height: 120px;
+            background: linear-gradient(135deg, #285EFF 0%, #5B8AFF 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 32px;
+            box-shadow: 0 20px 60px rgba(40, 94, 255, 0.3);
+            animation: none;
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+                box-shadow: 0 20px 60px rgba(40, 94, 255, 0.3);
+            }
+            50% {
+                transform: scale(1.05);
+                box-shadow: 0 25px 70px rgba(40, 94, 255, 0.4);
+            }
+        }
+
+        .status-icon svg {
+            width: 60px;
+            height: 60px;
+            color: white;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 16px;
+            color: #1A1A1A;
+        }
+
+        .subtitle {
+            font-size: 1.25rem;
+            color: #666;
+            margin-bottom: 32px;
+            max-width: 500px;
+            line-height: 1.6;
+        }
+
+        .message-box {
+            background: white;
+            border-radius: 16px;
+            padding: 32px 40px;
+            max-width: 600px;
+            width: 100%;
+            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
+            margin-bottom: 40px;
+        }
+
+        .message-box p {
+            color: #444;
+            line-height: 1.7;
+            margin-bottom: 16px;
+        }
+
+        .message-box p:last-child {
+            margin-bottom: 0;
+        }
+
+        .message-box a {
+            color: #285EFF;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .message-box a:hover {
+            text-decoration: underline;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .social-link {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 24px;
+            background: white;
+            border-radius: 12px;
+            text-decoration: none;
+            color: #1A1A1A;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+        }
+
+        .social-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(40, 94, 255, 0.15);
+            color: #285EFF;
+        }
+
+        .social-link svg {
+            width: 20px;
+            height: 20px;
+        }
+
+        footer {
+            padding: 24px;
+            text-align: center;
+            color: #888;
+            font-size: 0.875rem;
+        }
+
+        @media (max-width: 640px) {
+            h1 {
+                font-size: 1.75rem;
+            }
+
+            .subtitle {
+                font-size: 1rem;
+            }
+
+            .message-box {
+                padding: 24px;
+            }
+
+            .status-icon {
+                width: 100px;
+                height: 100px;
+            }
+
+            .status-icon svg {
+                width: 50px;
+                height: 50px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <svg width="200" height="32" viewBox="0 0 200 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M34.2603 15.8891L25.784 1L8.65384 1.11095L0 16.1109L8.47632 31L25.6065 30.8891L34.2603 15.8891ZM19.571 27.4497L10.4734 27.5163L5.96893 19.6169L8.01034 16.0666L11.4941 22.213L14.6893 16.6657L17.7071 18.4186L14.5118 23.966L21.5902 23.9216L19.571 27.4497ZM26.2278 15.9334L22.7441 9.78698L19.5488 15.3343L16.531 13.5814L19.7263 8.03403L12.6479 8.07841L14.6893 4.52811L23.7869 4.46154L28.2914 12.3609L26.2278 15.9334Z" fill="#285EFF"/>
+                <path d="M56.3194 9.23205V6.16992H44.6256H41.5635V9.23205V14.7572V17.8415V22.7676V25.8297H56.3194V22.7676H44.6256V17.8415H54.4777V14.7572H44.6256V9.23205H56.3194ZM96.5931 12.406V11.0739V11.0524V11.0295H99.6774V11.0524V25.7855V25.8083H96.5931V25.7855V24.3882C95.3726 25.2758 93.886 25.7862 92.2883 25.7862C88.2277 25.7862 84.9215 22.5021 84.9215 18.4193L84.9215 18.4078L84.9215 18.3964C84.9215 14.3358 88.2055 11.0295 92.2883 11.0295C93.3649 11.0295 94.3729 11.2648 95.2862 11.6766C95.747 11.8779 96.1838 12.1232 96.5931 12.406ZM87.9836 18.4186C87.9836 20.7929 89.9141 22.7233 92.2883 22.7233C94.6626 22.7233 96.5931 20.7929 96.5931 18.4186C96.5931 16.0443 94.6626 14.1139 92.2883 14.1139C89.9141 14.1139 87.9836 16.0443 87.9836 18.4186ZM109.197 11.0515C113.257 11.0515 116.563 14.3355 116.563 18.4184C116.563 18.4406 116.563 18.4406 116.586 18.4849L116.586 18.4849V25.8518H113.501V18.4849V18.4628C113.501 16.0885 111.571 14.158 109.197 14.158C106.822 14.158 104.892 16.0885 104.892 18.4628V18.4849V25.8518H101.807V11.0959H104.892V12.4494C106.112 11.5619 107.599 11.0515 109.197 11.0515ZM78.4644 12.4499V11.0964H75.3801V25.8523H78.4644V18.4854V18.4632C78.4644 16.089 80.3949 14.1585 82.7691 14.1585V11.0742C81.1493 11.052 79.6626 11.5623 78.4644 12.4499ZM168.198 11.0964V12.4499C169.396 11.5623 170.883 11.052 172.503 11.0742V14.1585C170.128 14.1585 168.198 16.089 168.198 18.4632V18.4854V25.8523H165.114V11.0964H168.198ZM73.2278 6.16992H67.392H64.3299H58.4941V9.23205H64.3299V25.8297H67.392V9.23205H73.2278V6.16992ZM123.376 14.1578H123.176C122.421 14.1578 121.8 14.7791 121.778 15.5113C121.778 16.2436 122.399 16.8871 123.154 16.8871H125.572H128.812H129.012C131.475 16.8871 133.472 18.9063 133.472 21.3471C133.472 23.8102 131.453 25.8072 129.012 25.8072H126.194H124.152H122.089V27.6489L118.716 24.2761L122.089 20.9034V22.7451H124.152H125.572H126.194H129.012C129.744 22.7451 130.387 22.1238 130.387 21.3693C130.387 20.6371 129.766 19.9936 129.012 19.9936H128.812H125.595H123.176C120.713 19.9936 118.716 17.9744 118.716 15.5335C118.716 13.0705 120.735 11.0735 123.176 11.0735H123.376H128.812H129.012C129.389 11.0735 129.744 10.9181 129.988 10.6741L128.701 9.38708H133.472V14.1578L132.163 12.8486C131.342 13.6474 130.232 14.1578 129.012 14.1578H128.812H123.376ZM146.053 9.29797V6.23584C141.97 6.23584 138.686 9.54206 138.686 13.6027H135.624V16.6648H138.686V25.8956H141.748V16.6648H146.075V13.6027H141.748C141.748 11.2284 143.679 9.29797 146.053 9.29797ZM148.228 18.5072C148.228 14.4465 151.512 11.1403 155.595 11.1403C159.655 11.1403 162.961 14.4465 162.961 18.5072C162.961 19.0397 162.917 19.5501 162.806 20.0382H162.54H159.633H151.556C152.177 21.6803 153.753 22.8341 155.595 22.8341C156.793 22.8341 157.88 22.3459 158.657 21.5693L160.809 23.7217C159.478 25.053 157.636 25.874 155.595 25.874C151.534 25.874 148.228 22.59 148.228 18.5072ZM155.595 14.2024C153.753 14.2024 152.177 15.3785 151.556 16.9983H159.633C159.012 15.3563 157.436 14.2024 155.595 14.2024Z" fill="#1A1A1A"/>
+            </svg>
+        </div>
+
+        <div class="status-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+        </div>
+
+        <h1>Service Has Been Discontinued</h1>
+        <p class="subtitle">Thank you for your support over the years.</p>
+
+        <div class="message-box">
+            <p>We regret to inform you that ETransfer has permanently ceased operations. All cross-chain asset transfer services have been discontinued.</p>
+            <p>Please migrate future cross-chain activities to <a href="https://ebridge.exchange" target="_blank" rel="noopener noreferrer">eBridge</a> ahead of time.</p>
+            <p>More details are available in the <a href="https://blog.aelf.com/posts/etransfer-service-sunset-announcement" target="_blank" rel="noopener noreferrer">Official Announcement</a></p>
+        </div>
+
+        <div class="social-links">
+            <a href="https://x.com/ETransfer_Web3" class="social-link" target="_blank" rel="noopener noreferrer">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                </svg>
+                X
+            </a>
+            <a href="https://form.etransfer.exchange/contact" class="social-link" target="_blank" rel="noopener noreferrer">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25z"/>
+                </svg>
+                Support
+            </a>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 ETransfer. All rights reserved.</p>
+    </footer>
+</body>
+</html>
